@@ -2,7 +2,6 @@ import numpy as np
 import math
 from matplotlib import pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-import os
 from time import sleep
 from scipy.interpolate import interp1d
 
@@ -207,7 +206,7 @@ class Screen():
 def main():
     donut = Donut(40, 60, 1, 3)
 
-    cameraVector = [10, 10, 10]
+    cameraVector = [0, 0, 10]
 
     camera = Camera(cameraVector[0], cameraVector[1], cameraVector[2])
     camera.setCameraCoordinates(donut.getCoordinates())
